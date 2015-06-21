@@ -8,18 +8,18 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" Plugines de ac√° ...
-
-Plugin 'kevinw/pyflakes-vim'
-Plugin 'klen/rope-vim'
-
-" ... hasta ac√°
-
-call vundle#end()            " required
-filetype plugin on           " required
+"""set rtp+=~/.vim/bundle/Vundle.vim
+"""call vundle#begin()
+"""
+"""" Plugines de ac· ...
+"""
+"""Plugin 'kevinw/pyflakes-vim'
+"""Plugin 'klen/rope-vim'
+"""
+"""" ... hasta ac·
+"""
+"""call vundle#end()            " required
+"""filetype plugin on           " required
 
 " Fin de Vundleo
 
