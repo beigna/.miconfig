@@ -1,6 +1,6 @@
 "
 " Instalar Vundle
-" git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 "
 
 " Requerido por Vundle
@@ -8,18 +8,18 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-"""set rtp+=~/.vim/bundle/Vundle.vim
-"""call vundle#begin()
-"""
-"""" Plugines de acá ...
-"""
-"""Plugin 'kevinw/pyflakes-vim'
-"""Plugin 'klen/rope-vim'
-"""
-"""" ... hasta acá
-"""
-"""call vundle#end()            " required
-"""filetype plugin on           " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Plugines de acá ...
+
+Plugin 'kevinw/pyflakes-vim'
+"Plugin 'klen/rope-vim'
+
+" ... hasta acá
+
+call vundle#end()            " required
+filetype plugin on           " required
 
 " Fin de Vundleo
 
