@@ -13,7 +13,7 @@ call vundle#begin()
 
 " Plugines de acá ...
 
-Plugin 'kevinw/pyflakes-vim'
+Plugin 'scrooloose/syntastic'
 "Plugin 'klen/rope-vim'
 
 " ... hasta acá
