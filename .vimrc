@@ -14,7 +14,6 @@ call vundle#begin()
 " Plugines de acá ...
 
 Plugin 'scrooloose/syntastic'
-"Plugin 'klen/rope-vim'
 
 " ... hasta acá
 
