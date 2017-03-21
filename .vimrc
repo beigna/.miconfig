@@ -13,7 +13,8 @@ call vundle#begin()
 
 " Plugines de acá ...
 
-Plugin 'scrooloose/syntastic'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'aklt/plantuml-syntax'
 
 " ... hasta acá
 
