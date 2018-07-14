@@ -15,6 +15,8 @@ call vundle#begin()
 
 Plugin 'vim-syntastic/syntastic'
 Plugin 'aklt/plantuml-syntax'
+Plugin 'fatih/vim-go'
+Plugin 'tmhedberg/SimpylFold'
 
 " ... hasta acá
 
@@ -23,18 +25,29 @@ filetype plugin on           " required
 
 " Fin de Vundleo
 
-
 syntax on
 
-set tabstop=4     " a tab is four spaces
-set autoindent    " always set autoindenting on
-"set copyindent    " copy the previous indentation on autoindenting
-set shiftwidth=4
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
 
-set softtabstop=4
-set expandtab " use spaces for tab
 set ruler
 set hlsearch
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+
+au BufNewFile,BufRead *.py
+    \ set cc=80
+
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
+
 
 filetype on
 "filetype plugin on
