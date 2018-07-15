@@ -11,14 +11,17 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Plugines de ac· ...
+" Plugines de ac√° ...
 
 Plugin 'vim-syntastic/syntastic'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'fatih/vim-go'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-airline/vim-airline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
 
-" ... hasta ac·
+" ... hasta ac√°
 
 call vundle#end()            " required
 filetype plugin on           " required
@@ -30,6 +33,11 @@ syntax on
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
+
+noremap <F9> :bprevious<CR>
+noremap <F10> :bnext<CR>
+
+noremap <F3> :NERDTreeToggle<CR>
 
 set ruler
 set hlsearch
@@ -53,3 +61,16 @@ filetype on
 "filetype plugin on
 
 autocmd BufWritePre * :%s/\s\+$//e
+
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
