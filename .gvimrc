@@ -1,5 +1,5 @@
 colorscheme desert
-set gfn=Monospace\ Regular\ 10
+set gfn=Noto\ Mono\ for\ Powerline\ Regular\ 10
 set lines=24 columns=80
 
 highlight ExtraWhitespace ctermbg=darkyellow guibg=darkyellow
