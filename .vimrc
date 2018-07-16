@@ -65,6 +65,8 @@ autocmd BufWritePre * :%s/\s\+$//e
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
+let NERDTreeQuitOnOpen = 1
+
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_fields = 1
