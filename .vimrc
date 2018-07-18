@@ -20,6 +20,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'ryanoasis/vim-devicons'
 
 " ... hasta acá
 
@@ -29,6 +30,7 @@ filetype plugin on           " required
 " Fin de Vundleo
 
 syntax on
+set hidden
 
 set foldmethod=indent
 set foldlevel=99
