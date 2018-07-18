@@ -1,6 +1,7 @@
 colorscheme desert
-set gfn=Noto\ Mono\ for\ Powerline\ Regular\ 10
-set lines=24 columns=80
+" set gfn=Noto\ Mono\ for\ Powerline\ Regular\ 10
+set gfn=NotoMono\ Nerd\ Font\ Mono\ Book\ 10
+set lines=37 columns=112
 
 highlight ExtraWhitespace ctermbg=darkyellow guibg=darkyellow
 match ExtraWhitespace /\s\+$/
