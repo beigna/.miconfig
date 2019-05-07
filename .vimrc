@@ -21,6 +21,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'rust-lang/rust.vim'
 
 " ... hasta acá
 
@@ -30,6 +31,10 @@ filetype plugin on           " required
 " Fin de Vundleo
 
 syntax on
+
+filetype on
+"filetype plugin on
+
 set hidden
 
 set foldmethod=indent
@@ -51,16 +56,13 @@ set expandtab
 set autoindent
 
 au BufNewFile,BufRead *.py
-    \ set cc=80
+    \ setlocal cc=80
 
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
+au BufNewFile,BufRead *.js,*.html,*.css,*.json,*.yaml
+    \ setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
-
-filetype on
-"filetype plugin on
+au BufNewFile,BufRead Makefile
+    \ setlocal noexpandtab
 
 autocmd BufWritePre * :%s/\s\+$//e
 
