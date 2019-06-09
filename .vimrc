@@ -15,13 +15,11 @@ call vundle#begin()
 
 Plugin 'vim-syntastic/syntastic'
 Plugin 'aklt/plantuml-syntax'
-Plugin 'fatih/vim-go'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ryanoasis/vim-devicons'
-Plugin 'rust-lang/rust.vim'
 
 " ... hasta acá
 
