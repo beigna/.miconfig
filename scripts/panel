@@ -14,9 +14,10 @@ xtitle -sf 'T%s\n' > "$PANEL_FIFO" &
 network.sh > "$PANEL_FIFO" &
 battery.sh > "$PANEL_FIFO" &
 clock.sh > "$PANEL_FIFO" &
+mem.sh > "$PANEL_FIFO" &
 bspc subscribe report > "$PANEL_FIFO" &
 
-. ~/.miconfig/scripts/panel_colors
+. panel_colors
 
 panel_bar < "$PANEL_FIFO" | lemonbar -a 32 -n "$PANEL_WM_NAME" -g x$PANEL_HEIGHT -f "NotoMono Nerd Font Mono-10" -F "$COLOR_DEFAULT_FG" -B "$COLOR_DEFAULT_BG" | sh &
 

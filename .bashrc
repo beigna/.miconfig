@@ -5,6 +5,9 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+export EDITOR=vim
+export HISTCONTROL=ignoreboth:erasedups
+
 PANEL_FIFO=/tmp/panel-fifo
 PANEL_HEIGHT=24
 PANEL_FONT="-*-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
