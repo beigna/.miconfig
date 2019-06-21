@@ -38,6 +38,9 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
     light -U 5
 
+Print
+    maim ~/Pictures/$(date +%s).png -s
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

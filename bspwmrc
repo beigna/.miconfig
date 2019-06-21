@@ -33,7 +33,8 @@ pkill xautolock
 pkill compton
 
 # AUTOSTART {
-xautolock -time 5 -locker "/home/nachopro/.scripts/lock.sh" &
+panel &
+xautolock -time 5 -locker "/home/nachopro/.miconfig/scripts/lock.sh" &
 feh --bg-fill wallpaper.jpg &
-compton &
+# compton &
 # }
