@@ -1,0 +1,4 @@
+geometry 1x1+1050
+# icon_size 20
+background "#333232"
+kludges force_icons_size
