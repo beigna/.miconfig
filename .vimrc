@@ -13,6 +13,7 @@ call vundle#begin()
 
 " Plugines de acá ...
 
+" Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'tmhedberg/SimpylFold'

@@ -3,6 +3,7 @@
 #
 
 alias ls='ls --color=auto'
+alias grep='grep --color'
 PS1='[\u@\h \W]\$ '
 
 export EDITOR=vim
@@ -16,13 +17,13 @@ export PANEL_FIFO PANEL_HEIGHT PANEL_FONT PANEL_WM_NAME
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+
 export PATH="/home/nachopro/.miconfig/scripts:${PATH}"
 
 export WORKON_HOME=~/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/bin/virtualenvwrapper.sh
 
-# Tiene que ir al final de todo!
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+alias t='todo.sh'
+t ls
