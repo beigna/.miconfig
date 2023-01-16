@@ -3,10 +3,8 @@
 
 [alias]
   hist = log --pretty=format:\"%C(yellow)%h%Creset %C(cyan)%ad%Creset %s [%Cgreen%an%Creset]\" --graph --date=short
-[pull]
-	rebase = false
 [user]
-	email = tranceway@gmail.com
-	name = Ignacio JM Benedetti
+  email = tranceway@gmail.com
+  name = Ignacio Benedetti
 [init]
-	defaultBranch = main
+  defaultBranch = main
